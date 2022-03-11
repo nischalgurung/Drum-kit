@@ -1,0 +1,73 @@
+:root {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/172276/pexels-photo-172276.jpeg?cs=srgb&dl=pexels-fwstudio-172276.jpg&fm=jpg")
+    center center/cover;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 6rem;
+  height: 6rem;
+  /* background: linear-gradient(45deg, rgb(175, 175, 175), rgb(100, 100, 100)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000;
+  margin: 0.4rem;
+  border: 3.5px dashed rgb(105, 19, 19);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.box.active::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+.box.active {
+  transform: scale(0.98);
+}
+#tom1 {
+  background: url("./images/tom1.png") center center/cover;
+  background-color: white;
+}
+#tom2 {
+  background: url("./images/tom2.png") center center/cover;
+  background-color: #fff;
+}
+#tom3 {
+  background: url("./images/tom3.png") center top/cover;
+}
+#tom4 {
+  background: url("./images/tom4.png") center top/cover;
+}
+#crash {
+  background: url("./images/crash.png") center top/cover;
+}
+#kick {
+  background: url("./images/kick.png") center center/cover;
+}
+#snare {
+  background: url("./images/snare.png") center top/cover;
+}
